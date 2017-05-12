@@ -4,6 +4,7 @@
   "description": "tool for benchmark websocket (socket.io, faye)",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js -w 10 -a 7000 -c 100 -v -k ws://localhost:8088 -o result.log && tail result.log",
     "test": "gulp mocha"
   },
   "repository": {
